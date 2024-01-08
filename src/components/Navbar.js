@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const NavBar = () => {
   return (
     <nav className='navbar' role='navigation' aria-label='main navigation'>
@@ -27,9 +29,7 @@ const NavBar = () => {
         <div className='navbar-start'>
           <a className='navbar-item'>Home</a>
 
-          <a className='navbar-item' href='/contact'>
-            Contact
-          </a>
+          <Link to='/contact'>Contact</Link>
 
           <div className='navbar-item has-dropdown is-hoverable'>
             <a className='navbar-link'>More</a>
