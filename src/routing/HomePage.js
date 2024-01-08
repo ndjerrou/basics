@@ -1,5 +1,12 @@
+import Navbar from '../components/Navbar';
+
 const HomePage = () => {
-  return <div>Kikoo from HomePage</div>;
+  return (
+    <>
+      <Navbar />
+      <h1>Welcome to the React Course</h1>
+    </>
+  );
 };
 
 export default HomePage;
