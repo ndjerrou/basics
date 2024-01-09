@@ -27,7 +27,9 @@ const NavBar = () => {
 
       <div id='navbarBasicExample' className='navbar-menu'>
         <div className='navbar-start'>
-          <a className='navbar-item'>Home</a>
+          <Link to='/' className='navbar-item'>
+            Home
+          </Link>
 
           <Link className='navbar-item' to='/contact'>
             Contact

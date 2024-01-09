@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import NavBar from '../components/Navbar';
 
 const UserListPage = () => {
   const users = [
@@ -7,11 +8,15 @@ const UserListPage = () => {
     { id: 3, name: 'Paul' },
   ];
 
-  return users.map(user => (
-    <p>
-      <Link to={`/users/${user.id}`}>{user.name}</Link>
-    </p>
-  ));
+  return (
+    <>
+      {users.map(user => (
+        <p>
+          <Link to={`/users/${user.id}`}>{user.name}</Link>
+        </p>
+      ))}
+    </>
+  );
 };
 
 export default UserListPage;
