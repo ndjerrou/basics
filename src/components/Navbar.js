@@ -29,7 +29,12 @@ const NavBar = () => {
         <div className='navbar-start'>
           <a className='navbar-item'>Home</a>
 
-          <Link to='/contact'>Contact</Link>
+          <Link className='navbar-item' to='/contact'>
+            Contact
+          </Link>
+          <Link className='navbar-item' to='/users'>
+            Users
+          </Link>
 
           <div className='navbar-item has-dropdown is-hoverable'>
             <a className='navbar-link'>More</a>
